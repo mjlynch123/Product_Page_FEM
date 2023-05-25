@@ -1,5 +1,12 @@
 const imageIcons = document.getElementById("image-icons");
 const selectedImage = document.getElementById("image");
+const amount = document.getElementById("amount");
+
+const minus = document.getElementById("minus");
+const add = document.getElementById("add");
+
+let clickedAmount = 0;
+amount.textContent = clickedAmount;
 
 function displayIcons() {
   for (let i = 1; i < 5; i++) {
@@ -43,4 +50,18 @@ iconClick.forEach((icon) => {
 
     // console.log("Clicked icon source:", src);
   });
+});
+
+add.addEventListener("click", function() {
+  if (clickedAmount < 50) {
+    clickedAmount++;
+    amount.textContent = clickedAmount;
+  }
+});
+
+minus.addEventListener("click", function() {
+  if (clickedAmount > 0) {
+    clickedAmount--;
+    amount.textContent = clickedAmount;
+  }
 });
