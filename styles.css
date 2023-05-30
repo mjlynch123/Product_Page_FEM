@@ -155,6 +155,22 @@ main {
   align-items: center;
 }
 
+.amount-buttons {
+  display: flex;
+}
+
+.minus {
+  margin-right: -1px;
+}
+
+.add-btn {
+  margin-left: -1px;
+}
+
+.minus, .add-btn {
+  margin-top: 20px;
+}
+
 .amount {
   font-size: 25px;
   width: 55px;
@@ -196,11 +212,140 @@ main {
   cursor: pointer;
 }
 
-@media screen and ( max-width: 414px) {
+/* @media screen and ( max-width: 912px) {
+  nav {
+    width: auto;
+    border: none;
+    margin-left: -0px;
+  }
+
+  nav ul {
+    margin-left: -120px;
+  }
+
+  .logo {
+    position: relative;
+    left: -90px;
+  }
+
+  .right-area {
+    left: 860px;
+  }
+
+  main {
+    flex-direction: column;
+    width: 990px;
+    margin-left: 25px;
+  }
+
+  .subtract {
+    width: 35px;
+    background-color: white;
+    margin-inline-end: 85px;
+  }
+
+  .minus {
+    margin-top: 25px;
+  }
+
+  #add {
+    width: 30px;
+    background-color: white;
+    margin-inline-start: 85px;
+  }
+
+  .amount {
+    height: 35px;
+    margin-top: 35px;
+    background-color: white;
+  }
+
+  .add button {
+    width: 450px;
+    height: 75px;
+    font-size: 25px;
+  }
+}
+
+@media screen and ( max-width: 820px) {
+  main {
+    width: 1000px;
+    margin-left: 80px;
+    margin-top: 80px;
+  }
+
   nav {
     border: none;
+    width: 100vw;
+  }
+
+  nav ul {
+    margin-left: -100px;
+  }
+
+  .logo {
+    position: relative;
+    left: -80px;
+  }
+
+  .right-area {
+    right: -130px;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
+
+@media screen and ( max-width: 768px) {
+  .right-area {
+    left: 790px;
+  }
+
+  main {
+    width: 920px;
+  }
+
+  .left {
+    margin-top: 150px;
+  }
+}
+
+@media screen and ( max-width: 540px) {
+  .logo {
+    left: -50px;
+  }
+
+  nav ul {
+    margin-left: -80px;
+  }
+
+  .right-area {
+    left: 780px;
+  }
+
+  main {
+    width: 900px;
+    margin-left: 170px;
+    border: 1px solid;
+  }
+
+  .left {
+    margin-top: 420px;
+  }
+} */
+
+@media screen and ( max-width: 414px) {
+  html, body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  nav {
     padding: 0;
     width: 100vw;
+    height: 70px;
+    z-index: 0;
   }
 
   nav ul {
@@ -208,9 +353,10 @@ main {
   }
 
   main {
-    flex-direction: column;
-    top: 76%;
     width: 100vw;
+    margin-left: -0px;
+    margin-top: 230px;
+    flex-direction: column;
   }
 
   .menu {
@@ -222,20 +368,22 @@ main {
   }
 
   .logo {
-    margin-top: 12px;
-    position: relative;
-    left: 2px;
+    position: absolute;
+    left: 60px;
+    top: 24px;
+    z-index: 1;
   }
 
   .right-area {
-    right: 10px;
+    left: 310px;
     top: 12px;
   }
 
   .left {
     position: relative;
-    top: -80px;
+    top: -65px;
     width: 100vw;
+    overflow-x: hidden;
   }
 
   .image, .image img {
@@ -251,8 +399,9 @@ main {
 
   .image-icons {
     max-width: 100vw;
+    width: 100%;
     position: relative;
-    left: 0px;
+    left: -3px;
     margin: 0;
   }
 
@@ -263,10 +412,259 @@ main {
   .original {
     position: relative;
     top: -38px;
-    left: 320px;
+    left: 305px;
+    overflow-x: hidden;
+    width: 80px;
+    text-align: right;
+  }
+
+  .add {
+    flex-direction: column;
+    margin-top: -30px;
+  }
+
+  .amount-buttons {
+    display: flex;
+  }
+
+  .minus {
+    margin-top: 20px;
+    margin-inline-end: 100px;
+  }
+
+  .add-btn {
+    margin-top: 25px;
+    margin-inline-start: 100px;
+  }
+
+  .subtract, .amount {
+    background-color: white;
+  }
+
+  .subtract {
+    height: 6px;
+  }
+
+  #add {
+    background-color: white;
+    height: 20px;
+    margin-top: -4px;
+  }
+
+  .add button {
+    max-width: 100vw;
+    width: 100%;
+    height: 60px;
+    margin-left: 15px;
+    overflow-x: hidden;
   }
 
   .attribution {
     display: none;
+  }
+}
+
+@media screen and ( max-width: 412px) {
+  main {
+    width: 100vw;
+    margin: 0;
+    left: 206px;
+    top: 690px;
+  }
+
+  nav {
+    height: 35px;
+    border: none;
+  }
+
+  .right-area {
+    left: 300px;
+    width: 100px;
+    overflow-x: hidden;
+  }
+
+  .left {
+    top: -80px;
+  }
+
+  .image-icons {
+    width: 500px;
+    left: 0px;
+  }
+
+  .minus {
+    margin-inline-end: 30px;
+  }
+
+  .subtract {
+    height: 7px;
+    width: 20px;
+    margin-top: 5px;
+  }
+
+  #add{
+    margin-inline-start: -50px;
+    margin-top: -3px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .add button {
+    margin-left: px;
+  }
+}
+
+@media screen and ( max-width: 393px) {
+  .right-area {
+    left: 290px;
+  }
+
+  main {
+    margin-top: -50px;
+    left: 195px;
+  }
+
+  .left {
+    top: -10px;
+    left: 0px;
+    width: 100vw;
+    padding: 0;
+  }
+
+  .right {
+    margin-top: -40px;
+  }
+
+  .original {
+    left: 280px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 100vw !important;
+    margin-left: -5px;
+  }
+
+  .left {
+    top: 65px;
+    left: -1px;
+    border: 1px solid;
+  }
+
+  .right {
+    margin-top: 220px;
+  }
+
+  .image,
+  .image img {
+    height: 375px;
+    width: 100vw;
+  }
+}
+
+@media screen and ( max-width: 360px) {
+  .right-area {
+    left: 250px;
+    width: 100px;
+    overflow-x: hidden;
+  }
+
+  main {
+    width: 355px;
+    margin: 0;
+    left: 175px;
+    margin-top: -75px;
+    border: 1px solid;
+  }
+
+  .left {
+    width: 100vw;
+    top: 205px;
+    left: 0px;
+  }
+
+  .image, .image img {
+    height: 350px;
+    width: 100vw;
+    border: 1px solid;
+    margin: 0;
+  }
+
+  .right {
+    margin-top: 170px;
+  }
+
+  .original {
+    left: 260px;
+  }
+
+  .image-icons {
+    width: 100vw;
+  }
+
+  .minus {
+    margin-inline-end: -50px;
+  }
+
+  .subtract {
+    height: 7px;
+    width: 20px;
+    margin-top: 15px;
+  }
+
+  #add{
+    margin-inline-start: -50px;
+    margin-top: 7px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .profile, .cart {
+    position: relative;
+    left: 35px;
+  }
+
+  .right-area {
+    width: 120px;
+  }
+
+  main {
+    width: 100vw !important;
+    margin-top: -135px;
+  }
+
+  .left {
+    position: relative;
+    width: 460px;
+    top: 140px;
+    left: 5px;
+    margin-left: calc(50% - 50vw);
+  }
+
+  .image, .image img{
+    height: 350px;
+    width: 100%;
+    left: 10px;
+  }
+
+  .right {
+    width: auto !important;
+    max-width: 430px;
+    margin-left: 20px;
+    margin-top: 120px;
+  }
+
+  body .image-icons {
+    width: auto !important;
+    max-width: 377px;
+    padding: 0;
+    left: 73px;
+  }
+
+  .icon, .icon img{
+    height: 70px;
   }
 }
